@@ -1,0 +1,240 @@
+#header {
+  .topbar {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    padding: 1.8rem 2rem;
+    background-color: $white;
+    margin: 0;
+    .logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 0;
+      .searchbarimage {
+        max-width: 90px;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .searchbar {
+    width: 80%;
+    height: 3.75rem;
+    @include radius(100px, 100px, 100px, 100px);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 15;
+    @include box-shadow(2px, 1px, 5px, rgb(64, 60, 67, 0.16), "");
+    &:hover {
+      @include box-shadow($top: 2px, $left: 1px, $blur: 8px, $color: rgba(64, 60, 67, 0.26), $inset: "");
+      border-color: rgba(223, 225, 229, 0);
+    }
+
+    > input {
+      height: 2.35rem;
+      border-style: none;
+      font-size: 1rem;
+      line-height: 2.75rem;
+      padding-left: 1.25rem;
+      flex: 1;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+    .searchbarmic {
+      height: 2.8rem;
+      width: 2rem;
+      margin-left: auto;
+      background-color: $white;
+      position: absolute;
+      right: 4.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        height: 2rem;
+        width: 2.35rem;
+      }
+    }
+    .searchbarbutton {
+      height: 2.8rem;
+      width: 2rem;
+      margin-left: auto;
+      background-color: $white;
+      position: absolute;
+      right: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        height: 2rem;
+        width: 2.35rem;
+
+        path {
+          fill: $blue;
+        }
+      }
+    }
+
+  }
+  
+
+  .content-options {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+
+    &:first-child {
+      .boxesicon {
+        margin-right: 0.8rem;
+      }
+    }
+
+    &:nth-child(2) {
+      .boxesicon {
+        margin-right: 0.8rem;
+      }
+    }
+    .boxesicon {
+      width: 3.2rem;
+      height: 3.2rem;
+      opacity: 1;
+      background-size: 1.65rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include radius(100%,100%,100%,100%);
+      &:hover {
+        background-color: rgba(60,64,67,0.08);
+        cursor: pointer;
+      
+      }
+      svg {
+        object-fit: cover;
+        width: 1.8rem;
+        path {
+          fill: $grey-80;
+        }
+  
+      }  
+    }
+  }
+
+ 
+   .optionsbar{
+    width: 100%;
+    height: 3.5rem;
+    border-width: 0px;
+    border-bottom: 1px;
+    border-color: $grey-10;
+    border-style: solid;
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    color: $grey-70;
+    padding-top: 4rem;
+
+    .optionsmenu1{
+      list-style: none;
+      @include display-flex(row);
+      padding: 0;
+      margin: 0;
+      margin-left: 150px;
+      .tab-item {
+        padding: 1rem;
+        color:  $grey-65;
+        display: inline-flex;
+        align-items: center;
+       
+        &:hover {
+          cursor: pointer;
+          
+        }
+        &:focus {
+          color: $blue;
+        }
+        &.optionsmenuactive {
+          position: relative;
+          color: $blue;
+      
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $blue;
+            left: 5px;
+            bottom: 0px;
+          }
+        }
+
+        .icon {
+          height: 1.5rem;
+          width: 1.5rem;
+          padding: 0.08rem;
+          svg {
+            width: 1.150rem;
+            height: auto;
+            object-fit: cover; 
+
+
+          }
+        } 
+      }
+    }
+    
+
+   }
+   .optionsmenu2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+
+    li {
+      padding: 0.8rem;
+      color:  $grey-65;
+      &:hover {
+        cursor: pointer;
+        
+      }
+      .custom-btn  {
+        font-size: 0.9rem;
+        color: $grey-70;
+        height: auto;
+        @include radius(0,0,0,0);
+        &:hover {
+          border: 1px solid $grey-18;
+          @include box-shadow(1px,2px,0,rgba(0, 0, 0,0.1 ),"");
+           background: -webkit-linear-gradient(top,$grey-5,rgba($grey-10,0.6));
+        }
+      }
+     
+    }
+  }
+
+  
+}
