@@ -82,20 +82,19 @@
           <div class="card-header">
             <div class="content-imgs">
               <picture class="content-img">
-                <img src="@/assets/img/linux2.jpg" alt="" />
+                <img src="@/assets/img/linux.jpeg" alt="" />
               </picture>
 
               <picture class="content-img">
-                <img src="@/assets/img/linux2.jpg" alt="" />
-              </picture>
-            </div>
-            <div class="content-imgs">
-              <picture class="content-img">
-                <img src="@/assets/img/linux2.jpg" alt="" />
+                <img src="@/assets/img/linux2.jpeg" alt="" />
               </picture>
 
               <picture class="content-img">
-                <img src="@/assets/img/linux2.jpg" alt="" />
+                <img src="@/assets/img/linux3.jpeg" alt="" />
+              </picture>
+
+              <picture class="content-img">
+                <img src="@/assets/img/linux4.jpeg" alt="" />
               </picture>
             </div>
 

@@ -230,7 +230,7 @@
         border: 1px solid $grey-15;
         height: auto;
         @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
-        .card-header{
+        .card-header {
             border-bottom: 1px solid $grey-15;
             h3 {
                 font-weight: 400;
@@ -239,14 +239,42 @@
                 font-size: 1.2rem;
                 color: $grey-55;
             }
-            .content-imgs {
-                @include display-flex(row,space-between,center);
+            &:first-child {
+                .content-imgs {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-rows: 120px;
+                    grid-gap: 1px;
+                    &:first-child {
+                        .content-img {
+                            grid-column: 1/4;
+                        }
+                    }
+                    .content-img {
+                        &:nth-child(2) {
+                            grid-column: 4/7;
+                        }
+                    }
+                    .content-img {
+                        &:nth-child(3) {
+                            grid-row: 2;
+                            grid-column: 1/3;
+                        }
+                    }
+                    .content-img {
+                        &:nth-child(4) {
+                            grid-row: 2;
+                            grid-column: 3/7;
+                        }
+                    }
+                }
             }
+
             .content-img {
                 width: 100%;
                 @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
-                margin: 0.05rem;
-                 img {
+                //margin: 0.05rem;
+                img {
                     @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
                     object-fit: cover;
                     width: 100%;
