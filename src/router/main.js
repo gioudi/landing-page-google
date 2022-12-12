@@ -3,7 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 
 
+
+
 Vue.use(VueRouter)
+
 
 const routes = [
   {
@@ -14,6 +17,9 @@ const routes = [
 
   
 ]
+
+
+
 
 const router = new VueRouter({
   mode: 'history',
