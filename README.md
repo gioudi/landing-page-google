@@ -1,24 +1,80 @@
+<a name="readme-top"></a>
+
 # Landing page google
 
-## Project setup
-```
-npm install
+> Landing page google.
+
+## Built With
+
+- Html
+- Css
+- Sass
+- JavaScript
+- Vue 2
+
+
+## Live Demo (if available)
+
+[Portfolio](https://semi-dios.github.io/landing-page-google)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+--Node v17.9.0
+--Npm v8.5.1
+--Composer v2.0.8
+--Text editor (VsCode)
+
+### Install
+
+1. Clone the repo
+   ```sh
+   git clone git@github.com:Semi-dios/landing-page-google.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   ```sh
+   yarn install
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Usage
+
+1.Run project
+
+```sh
+ npm run serve
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Authors
 
-### Compiles and minifies for production
-```
-npm run build
-```
+👤 **Author1**
 
-### Lints and fixes files
-```
-npm run lint
-```
+- GitHub: [@Semi-dios](https://github.com/Semi-dios)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/analyst-sergio-penagos/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Semi-dios/landing-page-google/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
