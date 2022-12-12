@@ -4,7 +4,7 @@
       <div class="grid">
         <div class="grid-col-sm-1 ">
           <picture class="logo">
-            <img class="searchbarimage" src="@/assets/img/googlelogo.png" />
+            <img class="searchbarimage" src="@/assets/img/googlelogo.png" :alt="$t('nav.alt_image_logo')" />
           </picture>
         </div>
         <div class="grid-col-lg-9">
@@ -68,7 +68,7 @@
               </svg>
             </picture>
 
-            <button class="custom-btn custom-btn-primary">Acceder</button>
+            <button class="custom-btn custom-btn-primary">{{ $t("nav.button_text") }}</button>
           </div>
         </div>
       </div>
@@ -151,8 +151,7 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Nav"
+};
 </script>
-
-<style>
-</style>
