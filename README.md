@@ -15,7 +15,7 @@
 
 ## Live Demo (if available)
 
-[Portfolio](https://semi-dios.github.io/landing-page-google)
+[Demo](https://semi-dios.github.io/landing-page-google)
 
 ## Getting Started
 
