@@ -1,24 +1,20 @@
 //Roboto
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 /* Grid */
 
-@import './global/grid';
+@import "./global/grid";
 
 /* Variables */
-@import './global/variables';
+@import "./global/variables";
 
 /* Mixin */
-@import './mixin/mixin';
+@import "./mixin/mixin";
 
 /* Defaults */
-@import './global/global';
-
-
+@import "./global/global";
 
 /* Custom Style  */
 
-@import './app/nav';
-@import './app/main';
+@import "./app/nav";
+@import "./app/main";

@@ -7,12 +7,14 @@
     padding: 1.8rem 2rem;
     background-color: $white;
     margin: 0;
+
     .logo {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0.8rem 0;
+
       .searchbarimage {
         max-width: 90px;
         width: 100%;
@@ -26,7 +28,9 @@
   .searchbar {
     width: 80%;
     height: 3.75rem;
+
     @include radius(100px, 100px, 100px, 100px);
+
     border-color: transparent;
     border-style: solid;
     border-width: 1px;
@@ -36,10 +40,13 @@
     display: flex;
     align-items: center;
     z-index: 15;
+
     @include box-shadow(2px, 1px, 5px, rgb(64, 60, 67, 0.16), "");
+
     &:hover {
       @include box-shadow($top: 2px, $left: 1px, $blur: 8px, $color: rgba(64, 60, 67, 0.26), $inset: "");
-      border-color: rgba(223, 225, 229, 0);
+
+      border-color: rgb(223 225 229 / 0%);
     }
 
     > input {
@@ -49,17 +56,21 @@
       line-height: 2.75rem;
       padding-left: 1.25rem;
       flex: 1;
+
       &:focus {
         outline: none;
       }
     }
+
     button {
       border: none;
       cursor: pointer;
+
       &:focus {
         outline: none;
       }
     }
+
     .searchbarmic {
       height: 2.8rem;
       width: 2rem;
@@ -70,11 +81,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       svg {
         height: 2rem;
         width: 2.35rem;
       }
     }
+
     .searchbarbutton {
       height: 2.8rem;
       width: 2rem;
@@ -85,6 +98,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       svg {
         height: 2rem;
         width: 2.35rem;
@@ -94,9 +108,8 @@
         }
       }
     }
-
   }
-  
+
 
   .content-options {
     display: flex;
@@ -115,6 +128,7 @@
         margin-right: 0.8rem;
       }
     }
+
     .boxesicon {
       width: 3.2rem;
       height: 3.2rem;
@@ -123,28 +137,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       @include radius(100%,100%,100%,100%);
+
       &:hover {
-        background-color: rgba(60,64,67,0.08);
+        background-color: rgb(60 64 67 / 8%);
         cursor: pointer;
-      
       }
+
       svg {
         object-fit: cover;
         width: 1.8rem;
+
         path {
           fill: $grey-80;
         }
-  
-      }  
+      }
     }
   }
 
- 
-   .optionsbar{
+
+  .optionsbar {
     width: 100%;
     height: 3.5rem;
-    border-width: 0px;
+    border-width: 0;
     border-bottom: 1px;
     border-color: $grey-10;
     border-style: solid;
@@ -154,30 +170,34 @@
     color: $grey-70;
     padding-top: 4rem;
 
-    .optionsmenu1{
+    .optionsmenu1 {
       list-style: none;
+
       @include display-flex(row);
+
       padding: 0;
       margin: 0;
       margin-left: 150px;
+
       .tab-item {
         padding: 1rem;
-        color:  $grey-65;
+        color: $grey-65;
         display: inline-flex;
         align-items: center;
-       
+
         &:hover {
           cursor: pointer;
-          
         }
+
         &:focus {
           color: $blue;
         }
+
         &.optionsmenuactive {
           position: relative;
           color: $blue;
-      
-          &:after {
+
+          &::after {
             content: "";
             display: block;
             position: absolute;
@@ -185,7 +205,7 @@
             height: 3px;
             background-color: $blue;
             left: 5px;
-            bottom: 0px;
+            bottom: 0;
           }
         }
 
@@ -193,20 +213,18 @@
           height: 1.5rem;
           width: 1.5rem;
           padding: 0.08rem;
+
           svg {
-            width: 1.150rem;
+            width: 1.15rem;
             height: auto;
-            object-fit: cover; 
-
-
+            object-fit: cover;
           }
-        } 
+        }
       }
     }
-    
+  }
 
-   }
-   .optionsmenu2 {
+  .optionsmenu2 {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -216,25 +234,27 @@
 
     li {
       padding: 0.8rem;
-      color:  $grey-65;
+      color: $grey-65;
+
       &:hover {
         cursor: pointer;
-        
       }
-      .custom-btn  {
+
+      .custom-btn {
         font-size: 0.9rem;
         color: $grey-70;
         height: auto;
+
         @include radius(0,0,0,0);
+
         &:hover {
           border: 1px solid $grey-18;
+
           @include box-shadow(1px,2px,0,rgba(0, 0, 0,0.1 ),"");
-           background: -webkit-linear-gradient(top,$grey-5,rgba($grey-10,0.6));
+
+          background: linear-gradient(top, $grey-5, rgba($grey-10, 0.6));
         }
       }
-     
     }
   }
-
-  
 }

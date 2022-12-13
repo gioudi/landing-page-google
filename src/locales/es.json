@@ -1,6 +1,14 @@
 {
     "nav": {
         "alt_image_logo": "logo_google",
-        "button_text": "Acceder"
+        "button_text": "Acceder",
+        "text_1":"Todos",
+        "text_2":"Imágenes",
+        "text_3":"Noticias",
+        "text_4":"Maps",
+        "text_5":"Videos",
+        "text_6":"Más",
+        "text_7":"Tools",
+        "text_8":"Cerca de 25,270,000,000 resultados (0.37 segundos)"
     }
 }
