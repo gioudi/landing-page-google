@@ -1,15 +1,15 @@
 /* Content List */
-/***************/
+
+/**************   */
 // 1.Document
 // 2.Text
 // 3.Multimedia
 // 4.Tables
 // 5. Form
-/**************/
+
+/*************   */
 
 /*  BASE */
-
-
 
 *,
 ::before,
@@ -17,44 +17,31 @@
   box-sizing: border-box;
 }
 
-
-/*1.  Document*/
+/* 1.  Document */
 
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-family: $font-family-sans-serif;
   line-height: $line-height-base;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
   font-size: 0.8rem;
-
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 0.9rem;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1rem;
-    }
-  }
 }
-
-
 
 /* margin classes */
 @include margin-classes;
+
 /* padding classes */
 @include padding-classes;
-
 
 .p0 {
   padding: 0 !important;
 }
+
 //  Tipography
 body,
 * {
@@ -65,7 +52,6 @@ body,
   padding: 0;
   margin: 0;
 
-
   .d-flex {
     display: flex;
     width: 100%;
@@ -74,7 +60,6 @@ body,
   .w-auto {
     width: auto !important;
   }
- 
 }
 
 .container {
@@ -83,15 +68,19 @@ body,
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+
   @media (min-width: 576px) {
     max-width: 540px;
   }
+
   @media (min-width: 768px) {
     max-width: 740px;
   }
+
   @media (min-width: 992px) {
     max-width: 960px;
   }
+
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
@@ -99,11 +88,13 @@ body,
 
 .container-sm {
   @extend .container;
+
   max-width: 640px;
 }
 
 .container-md {
   @extend .container;
+
   max-width: 960px;
 }
 
@@ -120,6 +111,7 @@ a {
     color: $primary-alt;
     text-decoration: underline;
   }
+
   &:not([href]) {
     color: inherit;
     text-decoration: none;
@@ -129,6 +121,7 @@ a {
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2.25rem;
 }
@@ -137,15 +130,16 @@ h3 {
   font-size: 2rem;
 }
 
-/* 3.Multimedia*/
+/* 3.Multimedia */
 
-/* 4.Tables*/
-/* 5. Form*/
+/* 4.Tables */
+
+/* 5. Form */
 
 button {
   border-radius: 0;
+
   &:focus {
-    outline: none;
     outline: none;
   }
 }
@@ -165,10 +159,10 @@ button {
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
   }
 }
 
 .custom-btn {
-  @include btn-sod();
+  @include btn-sod;
 }

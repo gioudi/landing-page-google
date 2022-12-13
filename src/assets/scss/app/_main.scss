@@ -1,16 +1,20 @@
 /* Content List */
-/***************/
+
+/**************   */
 //1. Web
-/**************/
+
+/*************   */
 // 1.1 Landing
 // 1.2 List
 // 1.3 Register
 // 1.4 Forgot
 // 1.5 Recovery
 // 1.6
-/**************/
+
+/*************   */
 //2. Dashboard
-/**************/
+
+/*************   */
 // 2.1 Index
 // 2.2
 // 2.3
@@ -18,279 +22,316 @@
 // 2.5
 // 2.6
 
-/*1. Web*/
+/* 1. Web */
 //*******
+
 /* 1.1 Landing */
 
 #viewLanding {
-    .searchresultsarea {
-        .searchresultsnumber {
-            font-size: 1rem;
-            color: $grey-55;
-        }
-
-        .searchresult {
-            > p {
-                font-size: 1.2rem;
-                line-height: 1rem;
-                color: $black;
-                margin-bottom: 0.085rem;
-                button {
-                    font-size: 0.6rem;
-                    line-height: 1rem;
-                    color: $grey-55;
-                    margin-bottom: 0px;
-                    padding: 0px;
-                    border-width: 0px;
-                    background-color: $white;
-                }
-            }
-            h2 {
-                font-weight: normal;
-                color: $primary-alt;
-                margin-bottom: 0px;
-
-                a {
-                    color: $primary-alt;
-                    font-size: 1.65rem;
-                }
-            }
-            span {
-                font-size: 1.2rem;
-                color: $grey-65;
-                em {
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    font-style: normal;
-                    color: $grey-60;
-                }
-            }
-        }
-    }
-    .relatedsearches {
-        h3 {
-            font-weight: normal;
-            font-size: 1.8rem;
-        }
+  .searchresultsarea {
+    .searchresultsnumber {
+      font-size: 1rem;
+      color: $grey-55;
     }
 
-    .relatedlists {
-        @include display-flex(row, space-between, center);
+    .searchresult {
+      > p {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        color: $black;
+        margin-bottom: 0.085rem;
+
+        button {
+          font-size: 0.6rem;
+          line-height: 1rem;
+          color: $grey-55;
+          margin-bottom: 0;
+          padding: 0;
+          border-width: 0;
+          background-color: $white;
+        }
+      }
+
+      h2 {
+        font-weight: normal;
+        color: $primary-alt;
+        margin-bottom: 0;
+
+        a {
+          color: $primary-alt;
+          font-size: 1.65rem;
+        }
+      }
+
+      span {
+        font-size: 1.2rem;
+        color: $grey-65;
+
+        em {
+          font-weight: bold;
+          font-size: 1.2rem;
+          font-style: normal;
+          color: $grey-60;
+        }
+      }
+    }
+  }
+
+  .relatedsearches {
+    h3 {
+      font-weight: normal;
+      font-size: 1.8rem;
+    }
+  }
+
+  .relatedlists {
+    @include display-flex(row, space-between, center);
+
+    width: 100%;
+
+    .relatedleft {
+      margin-right: 0.4rem;
+    }
+
+    .relatedright {
+      margin-left: 0.4rem;
+    }
+
+    ul {
+      list-style: none;
+      color: $primary;
+      min-width: 50%;
+      margin-bottom: 4rem;
+
+      li {
+        padding: 1rem 0.75rem;
+
+        @include display-flex(row, center, center);
+        @include radius(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+
+        background-color: $grey-5;
+        margin: 0.8rem 0;
+        color: $black;
+        font-size: 1.2rem;
+
+        b {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .pagebar {
+    .pagelist {
+      list-style: none;
+      color: $primary;
+      display: flex;
+      flex-direction: row;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      margin-left: 6rem;
+
+      li {
+        cursor: pointer;
+      }
+    }
+
+    .pagelistprevious {
+      &::before {
+        content: "<";
+        display: block;
+        position: absolute;
+        right: 0.8rem;
+        top: -2.5rem;
+        color: $primary;
+        font-size: 1.5rem;
+        transform: scale(0.7, 1.2);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -0.8rem;
+        top: -2.5rem;
+        width: 2.35rem;
+        height: 2.35rem;
+        background-repeat: no-repeat;
+        background-size: 1.8rem;
+      }
+    }
+
+    .pagelistfirst {
+      margin-left: 1.25rem;
+      font-size: 1rem;
+      color: $black;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -6px;
+        top: -25px;
+
+        @include radius(4rem, 4rem, 4rem, 4rem);
+
+        width: 18px;
+        height: 18px;
+        background-color: $red;
+        z-index: 2;
+      }
+    }
+
+    .pagelistnumber,
+    .pagelistfirst {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -2px;
+        top: -21px;
+
+        @include radius(4rem, 4rem, 4rem, 4rem);
+
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: $white;
+        z-index: 3;
+      }
+    }
+
+    .pagelistnumber {
+      color: $primary;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -6px;
+        top: -25px;
+
+        @include radius(4rem, 4rem, 4rem, 4rem);
+
+        width: 18px;
+        height: 18px;
+        background-color: rgb(255 196 0);
+        z-index: 2;
+      }
+    }
+
+    .pagelistnext {
+      color: $primary;
+      margin-left: 2.4rem;
+      font-size: 1rem;
+
+      &::before {
+        content: ">";
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: -35px;
+        color: $primary;
+        font-size: 20px;
+        transform: scale(0.7, 1.2);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -55px;
+        top: -37px;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 48px;
+      }
+    }
+  }
+
+  .pagelist li {
+    margin-right: 1rem;
+    position: relative;
+  }
+
+  .card {
+    border: 1px solid $grey-15;
+    height: auto;
+
+    @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
+
+    .card-header {
+      border-bottom: 1px solid $grey-15;
+
+      h3 {
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $grey-55;
+      }
+
+      &:first-child {
+        .content-imgs {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: 120px;
+          grid-gap: 1px;
+
+          &:first-child {
+            .content-img {
+              grid-column: 1/4;
+            }
+          }
+
+          .content-img {
+            &:nth-child(2) {
+              grid-column: 4/7;
+            }
+          }
+
+          .content-img {
+            &:nth-child(3) {
+              grid-row: 2;
+              grid-column: 1/3;
+            }
+          }
+
+          .content-img {
+            &:nth-child(4) {
+              grid-row: 2;
+              grid-column: 3/7;
+            }
+          }
+        }
+      }
+
+      .content-img {
         width: 100%;
 
-        .relatedleft {
-            margin-right: 0.4rem;
-        }
-
-        .relatedright {
-            margin-left: 0.4rem;
-        }
-
-        ul {
-            list-style: none;
-            color: $primary;
-            min-width: 50%;
-            margin-bottom: 4rem;
-
-            li {
-                padding: 1rem 0.75rem;
-                @include display-flex(row, center, center);
-                @include radius(1.8rem, 1.8rem, 1.8rem, 1.8rem);
-                background-color: $grey-5;
-                margin: 0.8rem 0;
-                color: $black;
-                font-size: 1.2rem;
-                b {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
-
-    .pagebar {
-        .pagelist {
-            list-style: none;
-            color: $primary;
-            display: flex;
-            flex-direction: row;
-            font-size: 0.8rem;
-            margin-bottom: 2rem;
-            margin-left: 6rem;
-            li {
-                cursor: pointer;
-            }
-        }
-
-        .pagelistprevious {
-            &::before {
-                content: "<";
-                display: block;
-                position: absolute;
-                right: 0.8rem;
-                top: -2.5rem;
-                color: $primary;
-                font-size: 1.5rem;
-                transform: scale(0.7, 1.2);
-            }
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                right: -0.8rem;
-                top: -2.5rem;
-                width: 2.35rem;
-                height: 2.35rem;
-                background-repeat: no-repeat;
-                background-size: 1.8rem;
-            }
-        }
-
-        .pagelistfirst {
-            margin-left: 1.25rem;
-            font-size: 1rem;
-            color: $black;
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                left: -6px;
-                top: -25px;
-                @include radius(4rem, 4rem, 4rem, 4rem);
-                width: 18px;
-                height: 18px;
-                background-color: $red;
-                z-index: 2;
-            }
-        }
-        .pagelistnumber,
-        .pagelistfirst {
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: -2px;
-                top: -21px;
-                @include radius(4rem, 4rem, 4rem, 4rem);
-                width: 0.8rem;
-                height: 0.8rem;
-                background-color: $white;
-                z-index: 3;
-            }
-        }
-        .pagelistnumber {
-            color: $primary;
-            &:after {
-                content: "";
-                display: block;
-                position: absolute;
-                left: -6px;
-                top: -25px;
-                @include radius(4rem, 4rem, 4rem, 4rem);
-                width: 18px;
-                height: 18px;
-                background-color: rgb(255, 196, 0);
-                z-index: 2;
-            }
-        }
-        .pagelistnext {
-            color: $primary;
-            margin-left: 2.4rem;
-            font-size: 1rem;
-            &:before {
-                content: ">";
-                display: block;
-                position: absolute;
-                left: 5px;
-                top: -35px;
-                color: $primary;
-                font-size: 20px;
-                transform: scale(0.7, 1.2);
-            }
-            &:after {
-                content: "";
-                display: block;
-                position: absolute;
-                left: -55px;
-                top: -37px;
-                width: 50px;
-                height: 50px;
-
-                background-repeat: no-repeat;
-                background-size: 48px;
-            }
-        }
-    }
-
-    .pagelist li {
-        margin-right: 1rem;
-        position: relative;
-    }
-
-    .card {
-        border: 1px solid $grey-15;
-        height: auto;
         @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
-        .card-header {
-            border-bottom: 1px solid $grey-15;
-            h3 {
-                font-weight: 400;
-            }
-            p {
-                font-size: 1.2rem;
-                color: $grey-55;
-            }
-            &:first-child {
-                .content-imgs {
-                    display: grid;
-                    grid-template-columns: repeat(6, 1fr);
-                    grid-template-rows: 120px;
-                    grid-gap: 1px;
-                    &:first-child {
-                        .content-img {
-                            grid-column: 1/4;
-                        }
-                    }
-                    .content-img {
-                        &:nth-child(2) {
-                            grid-column: 4/7;
-                        }
-                    }
-                    .content-img {
-                        &:nth-child(3) {
-                            grid-row: 2;
-                            grid-column: 1/3;
-                        }
-                    }
-                    .content-img {
-                        &:nth-child(4) {
-                            grid-row: 2;
-                            grid-column: 3/7;
-                        }
-                    }
-                }
-            }
 
-            .content-img {
-                width: 100%;
-                @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
-                //margin: 0.05rem;
-                img {
-                    @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
-                    object-fit: cover;
-                    width: 100%;
-                    height: 120px;
-                }
-            }
-        }
+        //margin: 0.05rem;
+        img {
+          @include radius(0.3rem, 0.3rem, 0.3rem, 0.3rem);
 
-        .card-body {
-            p {
-                font-size: 1.2rem;
-                color: $grey-75;
-            }
+          object-fit: cover;
+          width: 100%;
+          height: 120px;
         }
+      }
     }
+
+    .card-body {
+      p {
+        font-size: 1.2rem;
+        color: $grey-75;
+      }
+    }
+  }
 }
 
 //*******
+
 /* 1.1 List */

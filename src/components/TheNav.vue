@@ -152,6 +152,6 @@
 
 <script>
 export default {
-  name: "Nav"
+  name: "TheNav"
 };
 </script>
