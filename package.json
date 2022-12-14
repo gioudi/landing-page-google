@@ -1,6 +1,6 @@
 {
-  "name": "ciento50",
-  "version": "0.1.0",
+  "name": "sp-google-2022",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,6 +13,7 @@
     "axios": "^0.21.1",
     "bulma": "^0.9.4",
     "core-js": "^3.6.5",
+    "es6-promise": "^4.2.8",
     "stylelint-config-standard-scss": "^6.1.0",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.4",
@@ -65,5 +66,16 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "bugs": "https://github.com/Semi-dios/landing-page-google/issues",
+  "contributors": [
+    "Sergio Penagos <tipouno@misena.edu.co>",
+    "Sergio Penagos <spenagos@partners.modyo.com>"
+  ],
+  "homepage": "https://github.com/Semi-dios/landing-page-google",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Semi-dios/landing-page-google.git"
+  }
 }

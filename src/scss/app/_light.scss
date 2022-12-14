@@ -1,7 +1,60 @@
 .bg-light {
   .custom-sidebar {
     &__bg-light {
-      background: rgba($color: #000000, $alpha: 1);
+      background: rgba($black, 0.6);
+      height: 100%;
+      width: 100%;
+      @include transition();
+
+      position: absolute;
+      top: 0;
+    }
+    &__content-bg-light {
+      background-color: $beige-lighter;
+      position: fixed;
+      height: 100%;
+      width: 65%;
+      overflow-y: scroll;
+      padding: 1rem 0;
+      @include transition($time: 0.5s);
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &__content-logo {
+      line-height: 44px;
+      height: 44px;
+      padding-left: 15px;
+
+      @include display-flex($j-content: left);
+
+      picture {
+        width: 5.5rem;
+      }
+    }
+
+    &__content-item {
+      height: 48px;
+      color: rgba($black, 0.54);
+      line-height: 20px;
+      &:nth-child(5) {
+        border-bottom: 1px solid $gray-10;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        line-height: inherit;
+        @include display-flex($j-content: left);
+        font-weight: 400;
+
+        padding: 0 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

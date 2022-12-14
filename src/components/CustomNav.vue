@@ -1,12 +1,19 @@
 <template>
   <div>
     <nav
-      :class="isdark ? 'custom-navbar__bg-dark' : 'custom-navbar__bg-light'"
+      :class="
+        backgroundDark ? 'custom-navbar__bg-dark' : 'custom-navbar__bg-light'
+      "
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="is-flex-touch">
-        <span class="material-icons" @click="openSidebar()">
+      <div
+        class="is-flex-touch"
+        type="button"
+        @click="openSidebar()"
+        @touchstart="openSidebar()"
+      >
+        <span class="material-icons">
           menu
         </span>
       </div>
@@ -19,6 +26,7 @@
 </template>
 <script>
 import CustomSidebar from './CustomSidebar.vue'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'CustoNav',
   components: {
@@ -26,7 +34,18 @@ export default {
   },
   data () {
     return {
-      isdark: false
+      isdark: false,
+      isOpenSidebar: false
+    }
+  },
+  computed: {
+    ...mapState(['backgroundDark'])
+  },
+  methods: {
+    ...mapMutations(['SET_OPEN_SIDEBAR']),
+    openSidebar () {
+      this.isOpenSidebar = !this.isOpenSidebar
+      this.SET_OPEN_SIDEBAR(this.isOpenSidebar)
     }
   }
 }
