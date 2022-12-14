@@ -1,16 +1,60 @@
 {
-    "nav": {
-        "alt_image_logo": "logo_google",
-        "button_text": "Sing In",
-        "text_1":"All",
-        "text_2":"Images",
-        "text_3":"Videos",
-        "text_4":"Shopping",
-        "text_5":"News",
-        "text_6":"More",
-        "text_7":"Herramientas",
-        "text_8":"About 25,270,000,000 results (0.44 seconds)"
-
+  "alt_image_logo": "logo_google",
+  "nav": {
+    "button_text": "Sing In",
+    "text_1": "All",
+    "text_2": "Images",
+    "text_3": "Videos",
+    "text_4": "Shopping",
+    "text_5": "News",
+    "text_6": "More",
+    "text_7": "Herramientas",
+    "text_8": "About 25,270,000,000 results (0.44 seconds)"
+  },
+  "sidebar": {
+    "option_1": {
+      "text": "Home",
+      "icon": "home"
+    },
+    "option_2": {
+      "text": "Search history",
+      "icon": "history"
+    },
+    "option_3": {
+      "text": "Collections",
+      "icon": "bookmarks"
+    },
+    "option_4": {
+      "text": "Offline searches",
+      "icon": "manage_search"
+    },
+    "option_5": {
+      "text": "Settings",
+      "icon": "settings"
+    },
+    "option_6": {
+      "text": "Your data in Search",
+      "icon": "shield"
+    },
+    "option_7": {
+      "text": "Hide explicit results: on",
+      "icon": "explicit"
+    },
+    "option_8": {
+      "text": "Dark theme: off",
+      "icon": "light_mode"
+    },
+    "option_9": {
+      "text": "How Search works",
+      "icon": "manage_search"
+    },
+    "option_10": {
+      "text": "Help",
+      "icon": "help"
+    },
+    "option_11": {
+      "text": "Send feedback",
+      "icon": "feedback"
     }
+  }
 }
-

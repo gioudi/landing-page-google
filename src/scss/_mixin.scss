@@ -5,14 +5,24 @@
   align-items: $a-items;
 }
 
-@mixin radius($border-top-left: 8px, $border-top-right: 8px, $border-bottom-left: 8px, $border-bottom-right: 8px) {
+@mixin radius(
+  $border-top-left: 8px,
+  $border-top-right: 8px,
+  $border-bottom-left: 8px,
+  $border-bottom-right: 8px
+) {
   border-top-left-radius: $border-top-left;
   border-top-right-radius: $border-top-right;
   border-bottom-right-radius: $border-bottom-right;
 }
 
-@mixin box-shadow($top: 6px, $left: 6px, $blur: 12px, $color: rgba(0, 0, 0, 0.25), $inset: "") {
-  box-shadow: $top $left $blur $color #{$inset};
+@mixin box-shadow(
+  $top: 6px,
+  $left: 6px,
+  $blur: 12px,
+  $color: rgba(0, 0, 0, 0.25)
+) {
+  box-shadow: $top $left $blur $color;
 }
 
 @mixin transition($time: 0.4s, $property: all, $easing: ease-in) {

@@ -1,18 +1,20 @@
 <template>
   <div>
-      <the-nav/>
-      <router-view/>
+    <custom-nav />
+    <router-view />
   </div>
 </template>
 
 <script>
-
-import TheNav from './components/TheNav.vue'
+import CustomNav from './components/CustomNav.vue'
 
 export default {
   name: 'App',
   components: {
-    TheNav
+    CustomNav
   }
 }
 </script>
+<style lang="scss">
+@import '../src/scss/style';
+</style>

@@ -1,14 +1,60 @@
 {
-    "nav": {
-        "alt_image_logo": "logo_google",
-        "button_text": "Acceder",
-        "text_1":"Todos",
-        "text_2":"Imágenes",
-        "text_3":"Noticias",
-        "text_4":"Maps",
-        "text_5":"Videos",
-        "text_6":"Más",
-        "text_7":"Tools",
-        "text_8":"Cerca de 25,270,000,000 resultados (0.37 segundos)"
+  "alt_image_logo": "logo_google",
+  "nav": {
+    "button_text": "Acceder",
+    "text_1": "Todos",
+    "text_2": "Imágenes",
+    "text_3": "Noticias",
+    "text_4": "Maps",
+    "text_5": "Videos",
+    "text_6": "Más",
+    "text_7": "Tools",
+    "text_8": "Cerca de 25,270,000,000 resultados (0.37 segundos)"
+  },
+  "sidebar": {
+    "option_1": {
+      "text": "Página principal",
+      "icon": "Home"
+    },
+    "option_2": {
+      "text": "Historial de búsqueda",
+      "icon": "history"
+    },
+    "option_3": {
+      "text": "Colecciones",
+      "icon": "bookmarks"
+    },
+    "option_4": {
+      "text": "Búsquedas sin conexión",
+      "icon": "manage_search"
+    },
+    "option_5": {
+      "text": "Configuración",
+      "icon": "settings"
+    },
+    "option_6": {
+      "text": "Tus datos en la Búsqueda",
+      "icon": "shield"
+    },
+    "option_7": {
+      "text": "Ocultar resultados explícitos: desactivado",
+      "icon": "explicit"
+    },
+    "option_8": {
+      "text": "Tema oscuro: Desactivado",
+      "icon": "light_mode"
+    },
+    "option_9": {
+      "text": "Cómo funciona la Búsqueda",
+      "icon": "manage_search"
+    },
+    "option_10": {
+      "text": "Ayuda",
+      "icon": "help"
+    },
+    "option_11": {
+      "text": "Enviar comentarios",
+      "icon": "feedback"
     }
+  }
 }
