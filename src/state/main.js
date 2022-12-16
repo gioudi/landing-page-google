@@ -6,7 +6,12 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     backgroundDark: false,
-    openSidebar: false
+    openSidebar: false,
+    activeTab: {
+      id: 1,
+      text: ''
+    }
+
   },
   mutations: {
     SET_BACKGROUND_DARK (state, payload) {
@@ -14,6 +19,9 @@ const store = new Vuex.Store({
     },
     SET_OPEN_SIDEBAR (state, payload) {
       state.openSidebar = payload
+    },
+    SET_TAB (state, payload) {
+      state.activeTab = payload
     }
   }
 
