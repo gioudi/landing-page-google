@@ -2,6 +2,8 @@
   "alt_image_logo": "logo_google",
   "nav": {
     "button_text": "Sing In",
+   "options": {
+    
     "text_1": "All",
     "text_2": "Images",
     "text_3": "Videos",
@@ -10,6 +12,7 @@
     "text_6": "More",
     "text_7": "Herramientas",
     "text_8": "About 25,270,000,000 results (0.44 seconds)"
+   }
   },
   "sidebar": {
     "option_1": {

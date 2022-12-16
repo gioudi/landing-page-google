@@ -1,4 +1,71 @@
 .bg-light {
+  font-weight: 400;
+
+  .custom-navbar {
+     &__icon {
+      color: $gray-25; 
+      
+      &:hover {
+        cursor:pointer
+      }
+    }
+    &__button {
+      font-weight: 500;
+      margin-left: 0.5rem;
+      font-size: 0.850rem;
+      padding: 0.5rem 1rem;
+      min-width: 80px;
+      &:hover {
+        background-color: $primary-10;
+        @include box-shadow($top: 0px,
+        $left: 2px,
+        $blur: 3px,
+        $color: rgba($black,.25))
+      }
+     }
+    
+    &__bg-light {
+      padding: 0 1rem;
+      height: 48px;
+      @include display-flex($j-content: space-between);
+     
+      .custom-tab {
+        &__bg-light {
+          display: inline-flex;   
+          color: $gray-25; 
+          overflow: hidden;
+        }
+        &__list {
+          &-bg-light {
+            height: 46px;
+            @include display-flex();
+          }
+          &-item {
+            color: inherit;
+            font-size: 0.750rem;
+            font-weight: 600;
+            height: 100%;
+            padding: 0 0.5rem;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+            @include display-flex();
+            border-bottom: 2px solid transparent;
+           
+
+            &:hover, &:active, &-active{
+              cursor: pointer;
+              @include transition();
+              color: $primary;
+              border-color: $primary;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+
   .custom-sidebar {
     &__bg-light {
       background: rgba($black, 0.6);
