@@ -36,7 +36,7 @@
         >
           <a
             type="button"
-            :rel="`$t('footer.options.option_1')`"
+            :rel="$t('footer.options.option_1')"
             class="footer-options
 "
             >{{ $t('footer.options.option_1') }}</a
@@ -46,7 +46,7 @@
         <div class="column  is-narrow">
           <a
             type="button"
-            :rel="`$t('footer.options.option_2')`"
+            :rel="$t('footer.options.option_2')"
             class="footer-options "
             >{{ $t('footer.options.option_2') }}</a
           >
@@ -55,7 +55,7 @@
           <a
             href="#"
             target="_blank"
-            :rel="`$t('footer.options.option_3')`"
+            :rel="$t('footer.options.option_3')"
             class="footer-options "
             >{{ $t('footer.options.option_3') }}</a
           >
@@ -64,7 +64,7 @@
           <a
             href="#"
             target="_blank"
-            :rel="`$t('footer.options.option_4')`"
+            :rel="$t('footer.options.option_4')"
             class="footer-options "
             >{{ $t('footer.options.option_4') }}</a
           >
@@ -73,7 +73,7 @@
           <a
             href="#"
             target="_blank"
-            :rel="`$t('footer.options.option_5')`"
+            :rel="$t('footer.options.option_5')"
             class="footer-options "
             >{{ $t('footer.options.option_5') }}</a
           >
@@ -82,7 +82,7 @@
           <a
             href="#"
             target="_blank"
-            :rel="`$t('footer.options.option_6')`"
+            :rel="$t('footer.options.option_6')"
             class="footer-options "
             >{{ $t('footer.options.option_6') }}</a
           >
@@ -91,7 +91,7 @@
           <a
             href="#"
             target="_blank"
-            :rel="`$t('footer.options.option_7')`"
+            :rel="$t('footer.options.option_7')"
             class="footer-options "
             >{{ $t('footer.options.option_7') }}</a
           >
