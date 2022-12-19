@@ -1,5 +1,15 @@
-<template> <div>Home</div></template>
-
+<template>
+  <div
+    :class="backgroundDark ? 'landing-page__bg-dark' : 'landing-page__bg-light'"
+  ></div>
+</template>
 <script>
-export default {}
+import { mapState } from 'vuex'
+
+export default {
+  name: 'CustomFooter',
+  computed: {
+    ...mapState(['backgroundDark'])
+  }
+}
 </script>
