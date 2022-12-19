@@ -1,38 +1,44 @@
 .bg-light {
   font-weight: 400;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 
   .custom-navbar {
-     &__icon {
-      color: $gray-25; 
-      
+    &__icon {
+      color: $gray-25;
+
       &:hover {
-        cursor:pointer
+        cursor: pointer;
       }
     }
     &__button {
       font-weight: 500;
       margin-left: 0.5rem;
-      font-size: 0.850rem;
+      font-size: 0.85rem;
       padding: 0.5rem 1rem;
       min-width: 80px;
       &:hover {
         background-color: $primary-10;
-        @include box-shadow($top: 0px,
-        $left: 2px,
-        $blur: 3px,
-        $color: rgba($black,.25))
+        @include box-shadow(
+          $top: 0px,
+          $left: 2px,
+          $blur: 3px,
+          $color: rgba($black, 0.25)
+        );
       }
-     }
-    
+    }
+
     &__bg-light {
       padding: 0 1rem;
       height: 48px;
       @include display-flex($j-content: space-between);
-     
+
       .custom-tab {
         &__bg-light {
-          display: inline-flex;   
-          color: $gray-25; 
+          display: inline-flex;
+          color: $gray-25;
           overflow: hidden;
         }
         &__list {
@@ -42,7 +48,7 @@
           }
           &-item {
             color: inherit;
-            font-size: 0.750rem;
+            font-size: 0.75rem;
             font-weight: 600;
             height: 100%;
             padding: 0 0.5rem;
@@ -50,21 +56,20 @@
             text-transform: uppercase;
             @include display-flex();
             border-bottom: 2px solid transparent;
-           
 
-            &:hover, &:active, &-active{
+            &:hover,
+            &:active,
+            &-active {
               cursor: pointer;
               @include transition();
               color: $primary;
               border-color: $primary;
             }
           }
-          
         }
       }
     }
   }
-
 
   .custom-sidebar {
     &__bg-light {
@@ -120,6 +125,35 @@
 
         &:hover {
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .custom-footer {
+    &__bg-light {
+      background: $white-75;
+      color: $gray-25;
+      &-country {
+        min-height: 36px;
+        @include display-flex($j-content: left);
+        padding: 0 0.95rem;
+        font-weight: 300;
+      }
+      &-space {
+        height: 45px;
+        border-top: 1px solid $gray-10;
+        border-bottom: 1px solid $gray-10;
+      }
+      &-info {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.95rem;
+        .footer-options {
+          text-decoration: none;
+          color: inherit;
+          &:hover {
+            color: $gray-75;
+          }
         }
       }
     }

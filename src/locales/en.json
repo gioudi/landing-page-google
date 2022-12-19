@@ -2,17 +2,16 @@
   "alt_image_logo": "logo_google",
   "nav": {
     "button_text": "Sing In",
-   "options": {
-    
-    "text_1": "All",
-    "text_2": "Images",
-    "text_3": "Videos",
-    "text_4": "Shopping",
-    "text_5": "News",
-    "text_6": "More",
-    "text_7": "Herramientas",
-    "text_8": "About 25,270,000,000 results (0.44 seconds)"
-   }
+    "options": {
+      "text_1": "All",
+      "text_2": "Images",
+      "text_3": "Videos",
+      "text_4": "Shopping",
+      "text_5": "News",
+      "text_6": "More",
+      "text_7": "Herramientas",
+      "text_8": "About 25,270,000,000 results (0.44 seconds)"
+    }
   },
   "sidebar": {
     "option_1": {
@@ -58,6 +57,18 @@
     "option_11": {
       "text": "Send feedback",
       "icon": "feedback"
+    }
+  },
+  "footer": {
+    "country": "Colombia",
+    "options": {
+      "option_1": "Dark theme",
+      "option_2": "Settings",
+      "option_3": "Privacy",
+      "option_4": "Terms",
+      "option_5": "Advertising",
+      "option_6": "Business",
+      "option_7": "About"
     }
   }
 }
