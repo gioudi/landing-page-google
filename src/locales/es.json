@@ -1,5 +1,7 @@
 {
   "alt_image_logo": "logo_google",
+  "alt_image_microphone": "logo_microphone",
+  "alt_image_app": "logo_app",
   "nav": {
     "button_text": "Acceder",
     "options": {
@@ -70,5 +72,9 @@
       "option_6": "Negocios",
       "option_7": "Sobre Google"
     }
+  },
+  "landing": {
+    "text_1": "Google offered in: ",
+    "text_2": "Español(Latinoamérica)"
   }
 }
