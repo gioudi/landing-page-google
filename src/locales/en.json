@@ -1,7 +1,9 @@
 {
   "alt_image_logo": "logo_google",
+  "alt_image_microphone": "logo_microphone",
+  "alt_image_app": "logo_app",
   "nav": {
-    "button_text": "Sing In",
+    "button_text": "Sing in",
     "options": {
       "text_1": "All",
       "text_2": "Images",
@@ -70,5 +72,9 @@
       "option_6": "Business",
       "option_7": "About"
     }
+  },
+  "landing": {
+    "text_1": "Google offered in: ",
+    "text_2": "Español(Latinoamérica)"
   }
 }

@@ -26,8 +26,6 @@
      <div class="is-inline-flex">
        <div  class="is-inline-flex is-align-items-center mr-3 custom-navbar__icon"
         type="button"
-        @click="openSidebar()"
-        @touchstart="openSidebar()"
        >
         <span class="material-icons">
           apps
