@@ -23,7 +23,17 @@
        </div>
 
      </div>
-     <div class="is-inline-flex">
+     <div class="is-hidden-touch">
+      <div class="is-inline-flex is-align-items-center mr-3">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="mr-3 custom-navbar__link">
+              <p>{{ $t(`nav.options.text_9`) }}</p>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="ml-3 custom-navbar__link">
+              <p>{{ $t(`nav.options.text_2`) }}</p>
+          </a>
+      </div>
+     </div>
+     <div class="is-inline-flex is-align-items-center">
        <div  class="is-inline-flex is-align-items-center mr-3 custom-navbar__icon"
         type="button"
        >

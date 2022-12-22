@@ -28,7 +28,7 @@
       "
     >
       <div
-        class="columns is-multiline is-mobile is-justify-content-space-around"
+        class="columns is-multiline is-mobile is-justify-content-space-around is-hidden-tablet"
       >
         <div
           class="column  is-narrow
@@ -96,6 +96,81 @@
             >{{ $t('footer.options.option_7') }}</a
           >
         </div>
+      </div>
+
+      <div class="columns is-hidden-touch">
+         <div class="column">
+            <div class="columns">
+              <div class="column is-narrow">
+              <a
+                href="#"
+                target="_blank"
+                :rel="$t('footer.options.option_7')"
+                class="footer-options "
+                >{{ $t('footer.options.option_7') }}</a
+              >
+              </div>
+              <div class="column is-narrow">
+              <a
+                href="#"
+                target="_blank"
+                :rel="$t('footer.options.option_5')"
+                class="footer-options "
+                >{{ $t('footer.options.option_5') }}</a
+              >
+              </div>
+              <div class="column is-narrow">
+              <a
+                href="#"
+                target="_blank"
+                :rel="$t('footer.options.option_6')"
+                class="footer-options "
+                >{{ $t('footer.options.option_6') }}</a
+              >
+              </div>
+              <div class="column  is-narrow">
+              <a
+                type="button"
+                :rel="$t('footer.options.option_8')"
+                class="footer-options "
+                >{{ $t('footer.options.option_8') }}</a
+              >
+              </div>
+          </div>
+      </div>
+
+        <div class="column">
+          <div class="columns is-flex is-justify-content-flex-end">
+            <div class="column  is-narrow">
+          <a
+            href="#"
+            target="_blank"
+            :rel="$t('footer.options.option_3')"
+            class="footer-options "
+            >{{ $t('footer.options.option_3') }}</a
+          >
+            </div>
+            <div class="column  is-narrow">
+              <a
+                href="#"
+                target="_blank"
+                :rel="$t('footer.options.option_4')"
+                class="footer-options "
+                >{{ $t('footer.options.option_4') }}</a
+              >
+            </div>
+            <div class="column  is-narrow">
+              <a
+                href="#"
+                target="_blank"
+                :rel="$t('footer.options.option_9')"
+                class="footer-options "
+                >{{ $t('footer.options.option_9') }}</a
+              >
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </footer>

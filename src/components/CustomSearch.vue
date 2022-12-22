@@ -21,16 +21,18 @@
         backgroundDark ? 'custom-search__bg-dark-input' : 'custom-search__bg-light-input'
       "
     >
-     <button  :class="
+    <div class="is-inline-flex is-align-items-center">
+       <button  :class="
         backgroundDark ? 'custom-search__bg-dark-options' : 'custom-search__bg-light-options'
       ">
        <img src="../assets/img/microphone.svg" class="options-search" :alt="$t('alt_image_microphonre')" />
-    </button>
-     <button  :class="
-        backgroundDark ? 'custom-search__bg-dark-options' : 'custom-search__bg-light-options'
-      ">
-       <img src="../assets/img/app.svg" class="options-search" :alt="$t('alt_image_app')" />
-    </button>
+      </button>
+      <button  :class="
+          backgroundDark ? 'custom-search__bg-dark-options' : 'custom-search__bg-light-options'
+        ">
+        <img src="../assets/img/app.svg" class="options-search" :alt="$t('alt_image_app')" />
+      </button>
+    </div>
     </div>
   </div>
 </template>
