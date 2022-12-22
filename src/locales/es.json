@@ -78,6 +78,8 @@
   },
   "landing": {
     "text_1": "Google offered in: ",
-    "text_2": "Español(Latinoamérica)"
+    "text_2": "Español(Latinoamérica)",
+    "button_text_1": "Buscar con Google",
+    "button_text_2": "Voy a tener suerte"
   }
 }

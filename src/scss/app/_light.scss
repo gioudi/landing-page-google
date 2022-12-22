@@ -12,6 +12,10 @@
       &:hover {
         cursor: pointer;
       }
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
     &__button {
       font-weight: 500;
@@ -171,7 +175,7 @@
 
   .custom-footer {
     &__bg-light {
-      background: $white-75;
+      background: $white-50;
       color: $gray-25;
       &-country {
         min-height: 36px;
@@ -292,6 +296,12 @@
             font-size: inherit;
           }
         }
+        &-options {
+          padding: 0 0.5rem;
+        }
+        &-input {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -304,7 +314,38 @@
         min-height: 120px;
         @include display-flex();
         img {
-          max-width: 375px;
+          max-width: 300px;
+        }
+      }
+      &-button {
+        background: $white-75;
+        border: 1px solid $white-75;
+        @include radius(
+          $border-top-left: 4px,
+          $border-top-right: 4px,
+          $border-bottom-left: 4px,
+          $border-bottom-right: 4px
+        );
+        color: $gray-75;
+        font-size: 0.85rem;
+        @include display-flex();
+        min-width: 60px;
+        margin: 11px 4px;
+        height: 36px;
+        padding: 0 1rem;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          cursor: pointer;
+          border-color: $gray-10;
+          color: $black-10;
+          @include box-shadow(
+            $top: 0px,
+            $left: 1px,
+            $blur: 1px,
+            $color: rgba($black, 0.1)
+          );
         }
       }
     }
@@ -320,6 +361,7 @@
         &-content {
           img {
             max-height: 150px;
+            max-width: 375px;
           }
         }
       }
