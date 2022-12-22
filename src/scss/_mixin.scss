@@ -18,9 +18,9 @@
 }
 
 @mixin box-shadow(
-  $top: 6px,
-  $left: 6px,
-  $blur: 12px,
+  $top: 0px,
+  $left: 3px,
+  $blur: 4px,
   $color: rgba(0, 0, 0, 0.25)
 ) {
   box-shadow: $top $left $blur $color;

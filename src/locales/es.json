@@ -12,7 +12,8 @@
       "text_5": "Videos",
       "text_6": "Más",
       "text_7": "Tools",
-      "text_8": "Cerca de 25,270,000,000 resultados (0.37 segundos)"
+      "text_8": "Cerca de 25,270,000,000 resultados (0.37 segundos)",
+      "text_9": "Gmail"
     }
   },
   "sidebar": {
@@ -70,7 +71,9 @@
       "option_4": "Condiciones",
       "option_5": "Publicidad",
       "option_6": "Negocios",
-      "option_7": "Sobre Google"
+      "option_7": "Sobre Google",
+      "option_8": "Cómo funciona la Búsqueda",
+      "option_9": "Configuración"
     }
   },
   "landing": {
