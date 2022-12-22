@@ -37,9 +37,7 @@
        <div  class="is-inline-flex is-align-items-center mr-3 custom-navbar__icon"
         type="button"
        >
-        <span class="material-icons">
-          apps
-        </span>
+         <img src="../assets/img/apps-icon.svg" class="" :alt="$t('alt_image_app')" />
       </div>
         <button type="button" class="button is-primary  custom-navbar__button">{{$t('nav.button_text')}}</button>
      </div>
