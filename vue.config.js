@@ -16,5 +16,5 @@ module.exports = {
       enableInSFC: true
     }
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/landing-page-google/" : "/",
+  publicPath: process.env.NODE_ENV === 'production' ? '/landing-page-google/' : '/'
 }
