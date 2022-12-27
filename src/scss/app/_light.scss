@@ -24,7 +24,7 @@
       padding: 0.5rem 1rem;
       min-width: 80px;
       &:hover {
-        background-color: $primary-10;
+        background-color: $primary-75;
         @include box-shadow(
           $top: 0px,
           $left: 2px,
@@ -74,6 +74,131 @@
           }
         }
       }
+      &-listapps {
+        position: absolute;
+        background: transparent;
+        height: 438px;
+        padding: 3px 6px 9px;
+        overflow: hidden;
+        top: 3.5rem;
+        max-width: 328px;
+        z-index: 3;
+        right: 10px;
+
+        .content__listapps {
+          border: 1px solid rgba($black, 0.2);
+          height: 100%;
+          @include radius();
+          @include transition();
+          @include box-shadow(
+            $top: 1px,
+            $left: 4px,
+            $blur: 6px,
+            $color: rgba($black, 0.25)
+          );
+
+          background: $white;
+          box-sizing: border-box;
+          overflow-x: hidden;
+          padding-left: 14px;
+          padding-top: 10px;
+
+          &::-webkit-scrollbar {
+            width: 1rem;
+          }
+          &::-webkit-scrollbar-thumb {
+            border: 4px solid transparent;
+            @include radius();
+            min-height: 50px;
+            box-shadow: none;
+            background: $gray-10;
+
+            background-clip: padding-box;
+          }
+
+          &-space {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            width: 311px;
+            height: 0;
+            border-bottom: 1px solid $gray-10;
+            padding-left: inherit;
+            padding-right: inherit;
+            box-sizing: border-box;
+          }
+
+          &-option {
+            @include display-flex($direction: column, $j-content: space-around);
+
+            @include radius();
+            height: 84px;
+            width: 84px;
+            padding-bottom: 2px;
+            .logo-services {
+              height: 70px;
+              width: 62px;
+              @include display-flex($j-content: center);
+            }
+
+            p {
+              color: $black-10;
+              font-size: 0.85rem;
+              line-height: 18px;
+              text-overflow: ellipsis;
+              width: 76px;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+
+            &:hover,
+            .active {
+              background-color: $primary-10;
+              cursor: pointer;
+
+              p {
+                white-space: normal;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+              }
+            }
+          }
+
+          &-button {
+            color: $primary;
+            text-decoration: none;
+            max-width: 265px;
+            @include display-flex();
+            @include radius(
+              $border-top-left: 4px,
+              $border-top-right: 4px,
+              $border-bottom-left: 4px,
+              $border-bottom-right: 4px
+            );
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid $gray-10;
+            background-color: $white;
+            height: 38px;
+            width: auto;
+            padding: 10px 24px;
+            &:hover {
+              border-color: $primary-25;
+              background-color: $white-25;
+            }
+            &:active,
+            &:focus {
+              border-color: transparent;
+              background-color: $primary-10;
+              @include box-shadow(
+                $top: 0px,
+                $left: 3px,
+                $blur: 6px,
+                $color: rgba($black, 0.25)
+              );
+            }
+          }
+        }
+      }
     }
 
     &__link {
@@ -101,14 +226,18 @@
         height: 40px;
         width: 40px;
         @include display-flex();
+        @include radius(
+          $border-top-left: 40px,
+          $border-top-right: 40px,
+          $border-bottom-left: 40px,
+          $border-bottom-right: 40px
+        );
+
         &:hover {
-          @include radius(
-            $border-top-left: 40px,
-            $border-top-right: 40px,
-            $border-bottom-left: 40px,
-            $border-bottom-right: 40px
-          );
           background: rgba($black, 0.06);
+        }
+        &.active {
+          background: rgba($black, 0.2);
         }
       }
     }
@@ -287,6 +416,13 @@
           width: 100%;
           margin-top: 0.75rem;
           max-width: 564px;
+          min-height: 46px;
+          @include radius(
+            $border-top-left: 25px,
+            $border-top-right: 25px,
+            $border-bottom-left: 25px,
+            $border-bottom-right: 25px
+          );
         }
 
         &-button {

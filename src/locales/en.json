@@ -14,6 +14,135 @@
       "text_7": "Herramientas",
       "text_8": "About 25,270,000,000 results (0.44 seconds)",
       "text_9": "Gmail"
+    },
+    "services": {
+      "list": {
+        "app_1": {
+          "text": "Cuenta",
+          "url": "google-account-48.png"
+        },
+        "app_2": {
+          "text": "Búsqueda",
+          "url": "google-48.png"
+        },
+        "app_3": {
+          "text": "Maps",
+          "url": "google-maps-48.png"
+        },
+        "app_4": {
+          "text": "YouTube",
+          "url": "google-youtube-48.png"
+        },
+        "app_5": {
+          "text": "Play",
+          "url": "google-play-48.png"
+        },
+        "app_6": {
+          "text": "Noticias",
+          "url": "google-news-48.png"
+        },
+        "app_7": {
+          "text": "Gmail",
+          "url": "google-gmail-48.png"
+        },
+        "app_8": {
+          "text": "Meet",
+          "url": "google-meet-48.png"
+        },
+        "app_9": {
+          "text": "Chat",
+          "url": "google-chat-48.png"
+        },
+        "app_10": {
+          "text": "Contactos",
+          "url": "google-contacts-48.png"
+        },
+        "app_11": {
+          "text": "Drive",
+          "url": "google-drive-48.png"
+        },
+        "app_12": {
+          "text": "Calendar",
+          "url": "google-calendar-48.png"
+        },
+        "app_13": {
+          "text": "Traductor",
+          "url": "google-translate-48.png"
+        },
+        "app_14": {
+          "text": "Fotos",
+          "url": "google-photos-48.png"
+        },
+        "app_15": {
+          "text": "Shopping",
+          "url": "google-shopping-48.png"
+        },
+        "app_16": {
+          "text": "Finance",
+          "url": "google-48.png"
+        },
+        "app_17": {
+          "text": "Documentos",
+          "url": "google-docs-48.png"
+        },
+        "app_18": {
+          "text": "Hojas de cálculo",
+          "url": "google-sheets-48.png"
+        },
+        "app_19": {
+          "text": "Presentaciones",
+          "url": "google-slides-48.png"
+        },
+        "app_20": {
+          "text": "Libros",
+          "url": "google-books-48.png"
+        },
+        "app_21": {
+          "text": "Blogger",
+          "url": "blogger-icon.png"
+        },
+        "app_22": {
+          "text": "Hangouts",
+          "url": "hangout-logo-48.png"
+        },
+        "app_23": {
+          "text": "Google Keep",
+          "url": "google-keep-48.png"
+        },
+        "app_24": {
+          "text": "Jamboard",
+          "url": "google-jamboard-48.png"
+        },
+        "app_25": {
+          "text": "Earth",
+          "url": "google-earth-48.png"
+        },
+        "app_26": {
+          "text": "Colecciones",
+          "url": "google-collections-48.png"
+        },
+        "app_27": {
+          "text": "Arts and Culture",
+          "url": "google-arts-and-culture-48.png"
+        },
+        "app_28": {
+          "text": "Google Ads",
+          "url": "google-ads-48.png"
+        },
+        "app_29": {
+          "text": "Pódcasts",
+          "url": "google-podcasts-48.png"
+        },
+        "app_30": {
+          "text": "Viajes",
+          "url": "google-trips-48.png"
+        },
+        "app_31": {
+          "text": "Formularios",
+          "url": "google-forms-48.png"
+        }
+      },
+      "button": "More from Google"
     }
   },
   "sidebar": {

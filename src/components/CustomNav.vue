@@ -36,13 +36,55 @@
      <div class="is-inline-flex is-align-items-center">
        <div  class="is-inline-flex is-align-items-center mr-3 custom-navbar__icon"
         type="button"
+          @click="openListApps()"
+        :class="{ 'active' : isOpenApps }"
        >
          <img src="../assets/img/apps-icon.svg" class="" :alt="$t('alt_image_app')" />
-      </div>
+        </div>
         <button type="button" class="button is-primary  custom-navbar__button">{{$t('nav.button_text')}}</button>
      </div>
-
     </nav>
+
+    <div
+    :class="[  backgroundDark ? 'custom-navbar__bg-dark-listapps' : 'custom-navbar__bg-light-listapps',
+     isOpenApps ? 'is-block' : 'is-hidden']">
+      <div class="content__listapps">
+        <div class="columns is-multiline is-mobile is-gapless">
+          <div class="column is-4"
+           v-for="index in range(1, 15)" :key="index">
+            <div class="p-2 is-flex is-justify-content-center">
+              <a class="content__listapps-option has-text-centered ">
+                <div class="logo-services">
+                  <img :src="require('@/assets/img/' + $t(`nav.services.list.app_${index}.url`))" class="logo-services__icon" :alt="$t('alt_image_app')" />
+                </div>
+
+                <p>{{ $t(`nav.services.list.app_${index}.text`) }}</p>
+              </a>
+            </div>
+          </div>
+          <div class="content__listapps-space"></div>
+          <div class="column is-4"
+           v-for="index in range(16, 31)" :key="index">
+            <div class="p-2 is-flex is-justify-content-center">
+              <a class="content__listapps-option has-text-centered ">
+                <div class="logo-services">
+                  <img :src="require('@/assets/img/' + $t(`nav.services.list.app_${index}.url`))" class="logo-services__icon" :alt="$t('alt_image_app')" />
+                </div>
+
+                <p>{{ $t(`nav.services.list.app_${index}.text`) }}</p>
+              </a>
+            </div>
+          </div>
+          <div class="column is-12 ">
+            <div class="is-flex is-align-items-center py-4 is-justify-content-center">
+              <a class="content__listapps-button" href="#" target="_blank" type="button">
+                {{ $t('nav.services.button') }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
 
     <div class="is-hidden-tablet">
       <custom-sidebar></custom-sidebar>
@@ -62,7 +104,8 @@ export default {
   data () {
     return {
       isdark: false,
-      isOpenSidebar: false
+      isOpenSidebar: false,
+      isOpenApps: false
     }
   },
   computed: {
@@ -86,6 +129,12 @@ export default {
     openSidebar () {
       this.isOpenSidebar = !this.isOpenSidebar
       this.SET_OPEN_SIDEBAR(this.isOpenSidebar)
+    },
+    openListApps () {
+      this.isOpenApps = !this.isOpenApps
+    },
+    range (start, end) {
+      return Array(end - start + 1).fill().map((_, idx) => start + idx)
     }
   }
 }
