@@ -15,7 +15,7 @@
 
 ## Live Demo (if available)
 
-[Demo](https://semi-dios.github.io/landing-page-google)
+[Demo](https://gioudi.github.io/landing-page-google/)
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:Semi-dios/landing-page-google.git
+   git clone git@github.com:gioudi/landing-page-google.git
    ```
 2. Install NPM packages
    ```sh
@@ -56,14 +56,14 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@Semi-dios](https://github.com/Semi-dios)
+- GitHub: [@gioudi](https://github.com/gioudi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/analyst-sergio-penagos/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Semi-dios/landing-page-google/issues).
+Feel free to check the [issues page](https://github.com/gioudi/landing-page-google/issues).
 
 ## Show your support
 
